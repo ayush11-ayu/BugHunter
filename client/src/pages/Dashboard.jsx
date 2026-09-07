@@ -243,7 +243,7 @@ function Dashboard() {
                     <Tooltip />
 
                     <Bar dataKey="count" />
-                  </BarChart>
+                </BarChart>
                 </ResponsiveContainer>
               </div>
             )}

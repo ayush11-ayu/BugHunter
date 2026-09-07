@@ -423,3 +423,30 @@ Continue one step at a time.
 Do not repeat completed work.
 Do not jump ahead.
 Verify each step before proceeding.
+
+### Day 5 — CI/CD
+- GitHub Actions CI workflow created
+- Backend dependencies installed automatically in CI
+- Backend Jest tests run automatically in CI
+- Frontend dependencies installed automatically in CI
+- React production build runs automatically in CI
+- GitHub Actions workflow triggered successfully on push
+- CI result: SUCCESS
+- CI duration: 21 seconds
+- Node.js 20 deprecation warning observed; non-blocking
+
+## CI/CD Status
+COMPLETED
+
+## Current Step
+Step 127:
+Record CI/CD completion in PROJECT_PROGRESS.md.
+
+## Next
+Continue Day 5 with final deployment-readiness verification.
+
+## Rule
+Continue one step at a time.
+Do not repeat completed work.
+Do not jump ahead.
+Verify each step before proceeding.

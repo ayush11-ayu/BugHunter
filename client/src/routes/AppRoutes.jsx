@@ -16,7 +16,7 @@ function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>BugHunter</h1>} />
+        <Route path="/" element={<Login />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
@@ -42,3 +42,4 @@ function AppRoutes() {
 }
 
 export default AppRoutes;
+

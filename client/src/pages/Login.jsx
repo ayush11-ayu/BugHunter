@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { loginUser } from "../services/authService";
 
 function Login() {
@@ -33,13 +33,9 @@ function Login() {
 
       console.log("Login successful:", result);
 
-      // Store JWT token
       localStorage.setItem("token", result.token);
-
-      // Store logged-in user
       localStorage.setItem("user", JSON.stringify(result.user));
 
-      // Go to dashboard
       navigate("/dashboard");
     } catch (error) {
       console.error("Login error:", error);
@@ -100,8 +96,16 @@ function Login() {
           {loading ? "Logging in..." : "Login"}
         </button>
       </form>
+
+      <br />
+
+      <div>
+        <span>Don't have an account? </span>
+        <Link to="/register">Register</Link>
+      </div>
     </div>
   );
 }
 
 export default Login;
+
